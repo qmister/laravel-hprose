@@ -1,0 +1,34 @@
+{
+  "name": "whereof/laravel-hprose",
+  "description": "Laravel Hprose",
+  "homepage": "https://github.com/tp5er/laravel-hprose",
+  "type": "library",
+  "license": "Apache-2.0",
+  "keywords": [
+    "laravel",
+    "hprose",
+    "hprose-server",
+    "hprose-client"
+  ],
+  "authors": [
+    {
+      "name": "qmister",
+      "email": "1751212020@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "ext-json": "*",
+    "hprose/hprose": "^v2.0",
+    "doctrine/instantiator": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "whereof\\laravel\\Hprose\\": "src/"
+    }
+  },
+  "require-dev": {
+    "laravel/framework": "^6|^7|^8",
+    "laravel/lumen-framework": "^6|^7|^8"
+  }
+}
