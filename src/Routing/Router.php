@@ -66,7 +66,7 @@ class Router
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir), RecursiveIteratorIterator::SELF_FIRST);
         $files    = [];
         foreach ($iterator as $file) {
-            if ($file->isFile() && (!is_null($ext) || in_array($file->getExtension(), (array)$ext))) {
+            if ($file->isFile() && (!is_null($ext) && in_array($file->getExtension(), (array)$ext))) {
                 $files[] = $file->getRealPath();
             }
         }
